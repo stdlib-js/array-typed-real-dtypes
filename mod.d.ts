@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,33 +16,24 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var bench = require( '@stdlib/bench' );
-var isStringArray = require( '@stdlib/assert-is-string-array' ).primitives;
-var pkg = require( './../package.json' ).name;
-var dtypes = require( './../lib' );
+import { RealDataType as DataType } from '@stdlib/types/array';
+
+/**
+* Returns a list of typed array data types.
+*
+* @returns list of typed array data types
+*
+* @example
+* var list = dtypes();
+* // e.g., returns [ 'float32', 'float64', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
+*/
+declare function dtypes(): Array<DataType>;
 
 
-// MAIN //
+// EXPORTS //
 
-bench( pkg, function benchmark( b ) {
-	var out;
-	var i;
-
-	b.tic();
-	for ( i = 0; i < b.iterations; i++ ) {
-		out = dtypes();
-		if ( out.length !== 9 ) {
-			b.fail( 'should return an array of length 9' );
-		}
-	}
-	b.toc();
-	if ( !isStringArray( out ) ) {
-		b.fail( 'should return an array of strings' );
-	}
-	b.pass( 'benchmark finished' );
-	b.end();
-});
+export = dtypes;
