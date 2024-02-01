@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,32 +16,24 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-var indexOf = require( '@stdlib/utils-index-of' );
-var dtypes = require( './../lib' );
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var DTYPES = dtypes();
+import { RealDataType as DataType } from '@stdlib/types/array';
 
-function isdtype( str ) {
-	if ( indexOf( DTYPES, str ) === -1 ) {
-		return false;
-	}
-	return true;
-}
+/**
+* Returns a list of typed array data types.
+*
+* @returns list of typed array data types
+*
+* @example
+* var list = dtypes();
+* // e.g., returns [ 'float32', 'float64', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
+*/
+declare function dtypes(): Array<DataType>;
 
-var bool = isdtype( 'float64' );
-console.log( bool );
-// => true
 
-bool = isdtype( 'int8' );
-console.log( bool );
-// => true
+// EXPORTS //
 
-bool = isdtype( 'uint16' );
-console.log( bool );
-// => true
-
-bool = isdtype( 'beep' );
-console.log( bool );
-// => false
+export = dtypes;
