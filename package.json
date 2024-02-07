@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/array-typed-real-dtypes",
   "version": "0.1.1",
-  "description": "List of typed array data types.",
+  "description": "List of typed array real-valued data types.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -37,7 +37,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/types": "^0.2.0"
+    "@stdlib/array-dtypes": "^0.1.0",
+    "@stdlib/types": "^0.3.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-string-array": "^0.1.1",
