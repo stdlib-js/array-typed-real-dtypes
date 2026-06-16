@@ -2,6 +2,41 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-06-16)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`3901886`](https://github.com/stdlib-js/stdlib/commit/3901886ff5ff6bdbcfd65ea52109fee0b0e1ff03) - **docs:** fix examples and descriptions in top-level `array` declarations [(#12375)](https://github.com/stdlib-js/stdlib/pull/12375) _(by Philipp Burckhardt, Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.3">
 
 ## 0.2.3 (2026-02-08)
